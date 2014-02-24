@@ -22,4 +22,5 @@ Here are the steps after you do a mvn build
 
 4. Log into impala or hive or shark to run sql on the dataset
 
+Sample csv files from http://www.window.state.tx.us/taxinfo/taxfiles.html
 A big thanks to the blog at http://zenfractal.com/2013/08/21/a-powerful-big-data-trio/
