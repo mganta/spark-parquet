@@ -11,12 +11,14 @@ Here are the steps after you do a mvn build
 
 2. Run the spark program to convert it to parquet
 
-   You can use spark-class but due to a bug in spark 0.9.0, you will get this error. It has been reported as a blocker (will be fixed soon)
+   You can use spark-class but due to a bug in spark 0.9.0, you will get this error. Has been reported as a blocker (hopefully, will be fixed soon)
     Jar url 'hdfs:///namenode:8020/user/foo/<filename>.jar' is not a valid URL.
     Jar must be in URL format (e.g. hdfs://XX, file://XX)
   
   From eclipse or mvn, you can directly invoke the class com.cloudera.sa.SparkParquetCSVExample with the following parameters
-    spark://spark-makster.mycluster.net:7077 hdfs://namenode.mycluster.net:8020/user/foo/hotels/hotl*.csv hdfs://namenode.mycluster.net:8020/user/foo/output
+    spark://spark-makster.mycluster.net:7077 \
+    hdfs://namenode.mycluster.net:8020/user/foo/input/hotl*.csv \
+    hdfs://namenode.mycluster.net:8020/user/foo/output
     
 3. Use the sample create table script in hive folder to create an external table
 
