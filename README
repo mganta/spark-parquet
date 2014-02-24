@@ -1,7 +1,7 @@
 -------
 README 
 -------
-This is an  example to learn spark and show how to read a csv & convert it into a parquet file from spark. This shows how to store Avro data in Parquet files. 
+This is an example to learn spark and show how to read a csv & convert it into a parquet file from spark. This shows how to store Avro data in Parquet files. 
 This example uses a cdh5-beta2 cluster
 
 
@@ -15,7 +15,7 @@ Here are the steps after you do a mvn build
     Jar url 'hdfs:///namenode:8020/user/foo/<filename>.jar' is not a valid URL.
     Jar must be in URL format (e.g. hdfs://XX, file://XX)
   
-  From eclipse or mvn, you can directly invoke the class com.cloudera.sa.SparkParquetCSVExample with the following parameters
+  Meanwhile, From eclipse or mvn, you can directly invoke the class com.cloudera.sa.simple.SparkParquetCSVExample with the following parameters
     spark://spark-makster.mycluster.net:7077 \
     hdfs://namenode.mycluster.net:8020/user/foo/input/hotl*.csv \
     hdfs://namenode.mycluster.net:8020/user/foo/output
