@@ -21,3 +21,5 @@ Here are the steps after you do a mvn build
 3. Use the sample create table script in hive folder to create an external table
 
 4. Log into impala or hive or shark to run sql on the dataset
+
+A big thanks to the blog at http://zenfractal.com/2013/08/21/a-powerful-big-data-trio/
