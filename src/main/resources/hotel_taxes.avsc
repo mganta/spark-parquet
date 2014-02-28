@@ -1,7 +1,7 @@
 {
  "type": "record",
  "namespace": "com.cloudera.sa.simple",
- "name": "hotel_taxes",
+ "name": "HotelTaxes",
  "doc": "Hotel Tax Records",
  "fields": [
             {"name": "tax_payer_number", "type": "string"},
